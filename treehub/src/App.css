@@ -1,6 +1,125 @@
 .App {
   text-align: center;
 }
+.Edit_header{
+}
+.Edit_left{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.Edit_right{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+.Edit_none{
+  float: none;
+}
+
+.Edit_img_tree{
+  text-align: center;
+   width: 60%;
+    height: 100%;
+}
+
+.Edit_item1{
+  position: absolute;
+  top: 25%;
+  left: 46%;
+}
+.Edit_item2{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.Edit_item3{
+  position: absolute;
+  top: 40%;
+  left: 52%;
+}
+.Edit_item4{
+  position: absolute;
+  top:55%;
+  left:34%;
+}
+.Edit_item5{
+  position: absolute;
+  top:55%;
+  left:46%;
+}
+.Edit_item6{
+  position: absolute;
+  top:55%;
+  left:58%;
+}
+.Edit_item7{
+  position: absolute;
+  top:70%;
+  left:28%;
+}
+.Edit_item8{
+  position: absolute;
+  top:70%;
+  left:40%;
+}
+.Edit_item9{
+  position: absolute;
+  top:70%;
+  left:52%;
+}.Edit_item10{
+  position: absolute;
+  top:70%;
+  left:64%;
+}
+
+.Edit_menu_open{
+  width:80%;
+}
+.Edit_menu_close{
+  width: 0;
+}
+.Edit_itembox{
+  position: absolute;
+  list-style-type: none;
+  top: 20%;
+}
+.Edit_menu_img{
+  width: 30%;
+  height: 15%;
+}
+.Edit_item_size{
+  width: 8%;
+  height: 8%;
+}
+
+.Edit_tree_item{
+  position: relative;
+}
+
+.items_before{
+  position: absolute;
+  background-color: #FF99CC;
+  color:black;
+  text-orientation: upright;
+  font-size: 15%;
+  top: 40%;
+  left: 5%;
+  width: 15%;
+  height: 25%;
+}
+.items_after{
+  position: absolute;
+  background-color: #FF99CC;
+  color:black;
+  text-orientation: upright;
+  font-size: 15%;
+  top: 40%;
+  left: 90%;
+  width: 15%;
+  height: 25%;
+}
 
 .App-logo {
   height: 40vmin;
