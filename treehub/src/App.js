@@ -28,7 +28,9 @@ import { array, string } from 'prop-types';
 //     );
 //   }
 // }
-var images = new Array('image(3).png','image(3).png', 'image(3).png', 'image(3).png','image(3).png', 'image(3).png', 'image(3).png','image(3).png','image(3).png','image(3).png','image(3).png','image(3).png','image(3).png',toumei,joucho,jk);
+var storageRef = firebase.storage().ref();
+var imgSample = storageRef.child(images/images(3).png);
+var images = new Array(imgSample,imgSample, imgSample, imgSample,imgSample, imgSample, imgSample,imgSample,imgSample,imgSample,imgSample,imgSample,imgSample,toumei,joucho,jk);
 class App extends Component {
   constructor(props){
     super(props);
