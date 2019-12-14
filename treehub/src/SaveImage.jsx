@@ -1,10 +1,10 @@
 //画像を保存するコンポーネント
 import React, { Component } from 'react';
 import { firebaseDb } from './firebase';
-
 export default class SaveImage extends Component {
     constructor(props) {
         super(props);
+        console.log(props.foo)
         this.state = {
             top: '',
             firstLeft: '',
@@ -19,34 +19,32 @@ export default class SaveImage extends Component {
         };
         this.onClick = this.onClick.bind(this);
     }
-
     onClick() {
         firebaseDb.ref('decos').push({
-            top: this.state.top,
-            firstLeft: this.state.firstLeft,
-            firstRight: this.state.firstRight,
-            secondLeft: this.state.secondLeft,
-            secondMiddle: this.state.secondMiddle,
-            secondRight: this.state.secondRight,
-            bottomLeft: this.state.bottomLeft,
-            bottomMidLeft: this.state.bottomMidLeft,
-            bottomMidRight: this.state.bottomMidRight,
-            bottomRight: this.state.bottomRight,
+            top: this.props.top,
+            firstLeft: this.props.firstLeft,
+            firstRight: this.props.firstRight,
+            secondLeft: this.props.secondLeft,
+            secondMiddle: this.props.secondMiddle,
+            secondRight: this.props.secondRight,
+            bottomLeft: this.props.bottomLeft,
+            bottomMidLeft: this.props.bottomMidLeft,
+            bottomMidRight: this.props.bottomMidRight,
+            bottomRight: this.props.bottomRight,
         });
         this.setState({ top: '', 
                         firstLeft: '', firstRight: '',  
                         secondLeft: '', secondMiddle: '', secondRight: '',
                         bottomLeft: '', bottomMidLeft: '', bottomMidRight: '', bottomRight: '' });
     }
-
     render() {
         return (
             <div className="container">
-                <div className="field">
+                {/*<div className="field">
                     <label className="label">Top</label>
                     <input
                         className="input"
-                        value={this.state.top}
+                        value={images[0]}
                         onChange={e => this.setState({ top: e.target.value })}
                     />
                 </div>
@@ -122,7 +120,7 @@ export default class SaveImage extends Component {
                         onChange={e => this.setState({ bottomRight: e.target.value })}
                     />
                 </div>
-
+        */}
                 <div className="control">
                     <button className="button is-link" onClick={this.onClick}>
                         Save
